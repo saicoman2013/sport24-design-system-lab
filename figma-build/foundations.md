@@ -1,59 +1,57 @@
-# Sport24 Phase 2 — Foundations
+# Sport24 — Основы дизайн-системы
 
-Scope: existing Figma file `j3xgA2ZDMBbmbJnsGCxdhf`, page `2011:17965`. Source: the five completed reports under `/workspace/audit/`, their JSON/CSS evidence and screenshots, plus focused source verification in this phase. The canonical Button radius is **4px**, confirmed by the user; historical 3px Button measurements do not override it.
+Обновление: 12 ноября 2026 года. Работа выполнена в существующем файле `j3xgA2ZDMBbmbJnsGCxdhf`, на странице `2011:17965`. Основа — пять отчётов `/workspace/audit/`, сохранённые JSON/CSS, снимки сайта и повторная проверка через Playwright/Chromium.
 
-## Completion status
+Создано 12 новых семейств: 14 нативных узлов COMPONENT и 2 COMPONENT_SET. Локализовано 8 существующих семейств: 10 COMPONENT и 2 COMPONENT_SET. Итого 20 семейств, 24 COMPONENT и 4 COMPONENT_SET. Создано 10 текстовых стилей и 8 переменных; локализовано 88 прежних переменных, 4 коллекции, 9 текстовых стилей и 1 стиль эффектов. Всего 96 переменных и 19 текстовых стилей.
 
-Supported foundations and core components are built and validated. Phase 2 is **partially complete**: system-font and Cera Pro patterns are blocked by font availability. No replacement fonts, flattened UI, HTML imports, React components, or dependencies were introduced.
+## Утверждённая типографика
 
-77 new Variables; 11 existing Variables reused (88 total). 8 new Text Styles; 1 existing Button Text Style reused. 1 new Effect Style. 8 new native COMPONENT nodes (6 standalone plus 2 Heading variants), 1 new COMPONENT_SET. Existing Button set and its 2 variants preserved. Total on page: 10 COMPONENT nodes and 2 COMPONENT_SET nodes. Four variant members across Button and Section Heading; no duplicate family names.
+**HelveticaNeueCyr — основной интерфейсный шрифт по прямому указанию пользователя.** Это изменение спецификации относительно системного стека сайта `-apple-system, "Helvetica Neue", Arial, sans-serif`, а не утверждение о фактически загружаемом сайте шрифте. Размеры, интерлиньяж и цвета взяты из аудита. Подмена на Arial, Inter, Arimo или Helvetica Neue не выполнялась.
 
-## Collections and values
+В Figma найдены и успешно загружены 16 начертаний: UltraLight, Thin, Light, Roman, Medium, Bold, Heavy, Black; соответствующие курсивы UltraLight Italic, Thin Italic, Light Italic, Italic, Medium Italic, Bold Italic, Heavy Italic, Black Italic. Для проверенных ролей используются Roman (400) и Bold (700). Кириллица, включая Ё, Щ, Ъ, Ы, Ь, Э, Ю, Я, проверена визуально в образце `2030:52`.
 
-- Existing `Sport24 / Button Test`, Website mode: retained unchanged; original IDs preserved.
-- `Sport24 / Primitives`: source color values, including alpha. Existing black, yellow and yellow-hover primitives reused rather than duplicated.
-- `Sport24 / Semantic`: aliases for verified text/background/border/action/status roles. Semantic names are library organization proposals, not a claim that the source website exposes those exact names.
-- `Sport24 / Metrics`: measured spacing, independent radii, borders and layout reference widths. One Website mode; no invented light/dark modes.
+Stag Sans LC сохранён в заголовках, Кнопке, Метке лиги и специализированной ссылке матч-центра, где он прямо подтверждён аудитом. Сайт связывает CSS weight 400 с `StagSansLC-Medium.woff2`, 700 с Bold. Cera Pro недоступен; специально требующие его роли не заменялись. Наличие CSS-переменной Cera Pro не доказывает использование этого шрифта каждым счётом матча. Проверенный обычный счёт использует системный стек; для него применяется утверждённый HelveticaNeueCyr.
 
-Every variable has targeted scopes or empty primitive scopes. CSS expressions are preserved where there is an actual CSS variable; literal source values are used in code syntax when no equivalent website custom property exists. No fabricated CSS custom property names are implied. Alpha values read as CSS 0.5 retain exactly 0.5; hexadecimal suffixes ending 80 are display labels rounded to 8 bits.
+Объединены одинаковые роли: «Текст новости и ссылка», «Подпись и метаданные». Отдельный стиль ссылки при наведении содержит нативное жёлтое подчёркивание. Размеры новых стилей: основной текст 16/22,4; новость и ссылка 14/20,02; подпись 12/16,8; вкладка Bold 13/20,8; список 14/19,6; подпись матча 14,4/17,28; счёт Roman/Bold 14/14; бейдж Bold 10,5/17,85. Межбуквенный интервал 0 пкс. Полный реестр ID — в variable-registry.md.
 
-## Typography
+## Переменные и происхождение значений
 
-Stag Sans LC Medium and Bold are available. The website maps CSS weight 400 to `StagSansLC-Medium.woff2` and 700 to Bold. Text Styles implement only verified Stag patterns; no arbitrary typographic scale was added. Existing Button Medium16/19.2 style reused.
+Четыре прежние коллекции переименованы на месте: «Sport24 / Кнопка», «Sport24 / Базовые значения», «Sport24 / Семантика», «Sport24 / Метрики». Режим отображается как «Сайт»; ID режимов сохранены. Значения, типы, алиасы, области применения и привязки 88 прежних переменных сохранены.
 
-Cera Pro, Arial and Helvetica Neue failed exact Figma font loading. The website system stack is `-apple-system, "Helvetica Neue", Arial, sans-serif`; neither HelveticaNeueCyr nor Inter was substituted. Body, news-link, metadata, tab and select styles requiring that stack remain unbuilt. A CSS family declaration alone does not establish a font's actual use on every sports-data node.
+Объявленные CSS custom properties и вычисленные значения различаются: семантические русские имена и нормализованные метрики являются архитектурой библиотеки, а не заявлением о наличии одноимённых CSS-переменных сайта. Для объявленных переменных сохранён реальный CSS-синтаксис; для остальных — исходный литерал. Выдуманные CSS-имена не добавлены. Области применения целевые; у базовых цветов — пустые. ALL_SCOPES отсутствует. Альфа 0,5 остаётся ровно 0,5; суффикс 80 в имени — округлённая запись.
 
-## Spacing and radius
+Цвета включают чёрный, белый, фирменный #f1bd00, подтверждённое наведение Кнопки #e2b100, хоккей #2284e6, успех #087f55, ошибку #f22f45 и дополнительные спортивные состояния. Новые исходные цвета: #5f29cc для бейджа и #999999 для стрелки. Семантические роли в прежней коллекции ссылаются на базовые значения алиасами.
 
-Normalized measured spacing: 0, 2, 3.5, 4, 5, 7, 8, 10, 11, 12, 12.5, 16, 19, 24px. Existing zero/10px variables reused. These are contextual source metrics, not an invented 4px/8px scale or assertion that margins and gaps are interchangeable.
+## Геометрия
 
-Independent source radii: 0, 2, 3, 3.5, 4, 8, 14px; do not infer interchangeability. For example, 3px is observed on sports-status marks; 3.5px on form-result marks; 4px on image links/selects; 8px is also declared on Group values; 14px belongs to a separate comment/reaction control. All **Sport24 Button** assets created here use `radius/button = 4`. Radius0 remains on non-button icon primitives, text links, labels and headings.
+Измеренные интервалы: 0, 1, 2, 3,5, 4, 5, 7, 8, 10, 11, 12, 12,5, 16, 19, 24 пкс; у бейджа отдельно 4,2 и 5,775 пкс. Отступы, поля и интервалы не считаются взаимозаменяемыми.
 
-The new Icon Button reuses the earlier header icon-container component ID, rather than duplicating it. It serves the icon-container role too. Its 40×44 source geometry is retained, and the canonical Button4px rule is applied to its transparent control bounds; the source menu trigger had square bounds. This is explicitly a user-specification override, not a claim that the source CSS radius is 4px.
+Независимые радиусы: 0, 2, 3, 3,5, 4, 8, 14 пкс; у наклонного бейджа 3,15 пкс только на верхнем левом и нижнем правом углах. **Канонический радиус Кнопки — 4 пкс**, переменная `VariableID:2014:11`, имя `радиус/кнопка`. Историческое измерение 3 пкс не применяется к Кнопкам. На другие роли это правило автоматически не переносится.
 
-## Borders and effects
+Кнопка с иконкой `2021:19` сохраняет 40 × 44 и использует ту же каноническую переменную: это ранее документированное применение правила пользователя к кнопке, при квадратном исходном контейнере меню. Примитивы иконок сохраняют радиус 0.
 
-Border widths 0/1px and verified source colors are stored as variables. Native Effect Style `Sport24 / Popup / Declared shadow` implements declared `--Popup-box-shadow: 0 0 10px #0003`; it is marked declared-only and is not an invented elevation ladder.
+Границы 0/1 пкс. Стиль «Эффекты / Всплывающий блок / Тень» сохраняет объявленную `--Popup-box-shadow: 0 0 10px #0003`. Это объявленная тень, не доказательство наблюдённого состояния открытого окна.
 
-## Layout references
+## Сетка и адаптивность
 
-| Viewport | Measured main width | Columns | Gap | Outer margins |
+| Ширина окна | Основной контейнер | Колонки | Интервал | Поля |
 |---|---:|---:|---:|---|
-| 390 | 358 | 4 | 8 | 16px |
-| 768 | 688 | 9 | 24 | 40px |
-| 1440 | 1032 | 12 | 24 | auto, centered |
-| 1920 | 1032 | 12 | 24 | auto, centered |
+| 390 | 358 | 4 | 8 | 16 |
+| 768 | 688 | 9 | 24 | 40 |
+| 1440 | 1032 | 12 | 24 | По центру |
+| 1920 | 1032 | 12 | 24 | По центру |
 
-Source: home viewport JSONs, `responsive-behavior.md`, saved HTML `._465xgJ` inline `--grid-columns-mobile:4`, `--grid-columns-tablet:9`, `--grid-columns-desktop:12`, and main CSS media queries. Desktop source column width is64px; tablet/mobile use fractional columns. These grids describe the sampled main-content layout, not every grid on every page.
+Источник: responsive-behavior.md, JSON главной страницы, сохранённый HTML `._465xgJ` с `--grid-columns-mobile:4`, `--grid-columns-tablet:9`, `--grid-columns-desktop:12`. Настольная колонка 64 пкс; планшетные и мобильные колонки дробные. Это сетка проверенного основного содержимого, а не всех блоков сайта.
 
-Main breakpoints: max767px; 768–1279px; min1280px. Native reference frames and column grids were created. Figma Variables do not automatically switch with viewport width; Heading variants are selected manually.
+Основные границы сайта: до 767, 768–1279, от 1280 пкс. В Figma выбор адаптивного варианта заголовка выполняется вручную. Автоматических CSS media queries нет. Настольная группа вкладок 856 × 46 используется от 1280; на меньшей ширине сайт показывает другую нижнюю навигацию.
 
-## Canvas organization
+## Разделы холста
 
-- 00 — Foundations: [ 2020:92 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2020-92)
-- 01 — Primitives: [ 2020:243 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2020-243)
-- 02 — Components: [ 2020:244 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2020-244)
-- 03 — Composite Components: [ 2020:245 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2020-245)
-- 04 — Patterns: [ 2020:248 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2020-248)
+- Sport24 / Тестовые компоненты: [2014:15](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2014-15); координаты 120, 120.
+- 00 — Основы: [2020:92](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2020-92); координаты 800, 120.
+- 01 — Примитивы: [2020:243](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2020-243); координаты 800, 2219.
+- 02 — Компоненты: [2020:244](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2020-244); координаты 2400, 2219.
+- 03 — Составные компоненты: [2020:245](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2020-245); координаты 800, 4279.
+- 04 — Паттерны: [2020:248](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2020-248); координаты 2400, 4279.
 
-The original test section `2014:15` and Button masters were not moved or renamed. `02 — Components` contains connected Button examples referencing the original family. Sections03/04 are reserved documentation areas, not empty component sets.
+ID, содержимое и начальные координаты прежних разделов сохранены; границы расширены для новых образцов. Исходная Кнопка не перемещена. В «04 — Паттерны» размещены проверочные экземпляры, не полноценные шаблоны страниц. Внесистемные дизайны не редактировались.
