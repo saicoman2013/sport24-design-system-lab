@@ -1,114 +1,147 @@
-# Sport24 variable and style registry
+# Sport24 — Реестр переменных и стилей
 
-Created77 Variables; reused11 existing Variables. Total88. All existing Button variable IDs retained. Values below are actual created values or preserved source mappings; semantic aliases refer to primitive IDs. One Website mode per collection.
+Создано 12 новых семейств: 14 нативных узлов COMPONENT и 2 COMPONENT_SET. Локализовано 8 существующих семейств: 10 COMPONENT и 2 COMPONENT_SET. Итого 20 семейств, 24 COMPONENT и 4 COMPONENT_SET. Создано 10 текстовых стилей и 8 переменных; локализовано 88 прежних переменных, 4 коллекции, 9 текстовых стилей и 1 стиль эффектов. Всего 96 переменных и 19 текстовых стилей.
 
-| Variable | ID | Type | Value / alias | Status | Source |
-|---|---|---|---|---|---|
-| `color/primitive/00000000` | `VariableID:2020:6` | COLOR | `{"r":0,"g":0,"b":0,"a":0}` | created | --ScrollShadow-color-end; home:main:backgroundColor; home:a.yZz4oT:backgroundColor; home:div.b-o8ff.MZlQie:backgroundColor; home:a.VXNO7t:backgroundColor |
-| `color/primitive/00000033` | `VariableID:2020:7` | COLOR | `{"r":0,"g":0,"b":0,"a":0.2}` | created | --ScrollShadow-color-start |
-| `color/primitive/00000099` | `VariableID:2020:8` | COLOR | `{"r":0,"g":0,"b":0,"a":0.6}` | created | --Background-blackout |
-| `color/primitive/000000cc` | `VariableID:2020:9` | COLOR | `{"r":0,"g":0,"b":0,"a":0.8}` | created | --RangeResult-promo-bg-color |
-| `primitive/black` | `VariableID:2014:5` | COLOR | `"#000000"` | reused | --Tooltip-arrow-color; --link-color; --swiper-pagination-color; home:#top-navigation:backgroundColor; home:nav.bE023A:backgroundColor |
-| `color/primitive/007affff` | `VariableID:2020:10` | COLOR | `{"r":0,"g":0.47843137254901963,"b":1,"a":1}` | created | --swiper-theme-color |
-| `color/primitive/087f55ff` | `VariableID:2020:11` | COLOR | `{"r":0.03137254901960784,"g":0.4980392156862745,"b":0.3333333333333333,"a":1}` | created | --color-success |
-| `color/primitive/08995cff` | `VariableID:2020:12` | COLOR | `{"r":0.03137254901960784,"g":0.6,"b":0.3607843137254902,"a":1}` | created | --win-color; match:a.KLAEkY.vGC8ua:backgroundColor; match:a.LrFgBN.oS593X:color; match:a.LrFgBN.oS593X:backgroundColor; tournament:a.LrFgBN.oS593X:color |
-| `color/primitive/121212ff` | `VariableID:2020:13` | COLOR | `{"r":0.07058823529411765,"g":0.07058823529411765,"b":0.07058823529411765,"a":1}` | created | news:main:color; news:h1._8soirT:color; news:div.b-o8ff.MZlQie:color; news:svg.wuy-wK:color; news:svg.PPT3kW:color |
-| `color/primitive/141419ff` | `VariableID:2020:14` | COLOR | `{"r":0.0784313725490196,"g":0.0784313725490196,"b":0.09803921568627451,"a":1}` | created | news:svg.DwpFz_:color |
-| `color/primitive/181818ff` | `VariableID:2020:15` | COLOR | `{"r":0.09411764705882353,"g":0.09411764705882353,"b":0.09411764705882353,"a":1}` | created | match:a._34GSq9.rZrGsp:color |
-| `color/primitive/298e64ff` | `VariableID:2020:16` | COLOR | `{"r":0.1607843137254902,"g":0.5568627450980392,"b":0.39215686274509803,"a":1}` | created | --quiz-color-success |
-| `color/primitive/373a3cff` | `VariableID:2020:17` | COLOR | `{"r":0.21568627450980393,"g":0.22745098039215686,"b":0.23529411764705882,"a":1}` | created | --body-color; home:main:color; home:footer.uQs9Iu:color; home:div.b-o8ff.MZlQie:color; news:footer.uQs9Iu:color |
-| `color/primitive/55555580` | `VariableID:2020:18` | COLOR | `{"r":0.3333333333333333,"g":0.3333333333333333,"b":0.3333333333333333,"a":0.5}` | created | match:a._34GSq9:backgroundColor |
-| `color/primitive/9a9a9aff` | `VariableID:2020:19` | COLOR | `{"r":0.6039215686274509,"g":0.6039215686274509,"b":0.6039215686274509,"a":1}` | created | category:a.IXZ-p_:color; match:h1:color |
-| `color/primitive/a3a3a3ff` | `VariableID:2020:20` | COLOR | `{"r":0.6392156862745098,"g":0.6392156862745098,"b":0.6392156862745098,"a":1}` | created | match:svg.pVyi9C:color |
-| `color/primitive/aaaaaaff` | `VariableID:2020:21` | COLOR | `{"r":0.6666666666666666,"g":0.6666666666666666,"b":0.6666666666666666,"a":1}` | created | home:svg:color; news:svg:color; category:svg:color; categoryHockey:svg:color; article:svg:color |
-| `color/primitive/ddddddff` | `VariableID:2020:22` | COLOR | `{"r":0.8666666666666667,"g":0.8666666666666667,"b":0.8666666666666667,"a":1}` | created | news:button.foizjG:color; news:svg.B8gAbQ:color; --ResultTable-font-color; match:a.LrFgBN:color; match:a.LrFgBN:backgroundColor |
-| `primitive/yellow-hover` | `VariableID:2014:4` | COLOR | `"#e2b100"` | reused | Settled Button hover reverified in prior phase |
-| `color/primitive/e5b400ff` | `VariableID:2020:23` | COLOR | `{"r":0.8980392156862745,"g":0.7058823529411765,"b":0,"a":1}` | created | --draw-color |
-| `color/primitive/e65050ff` | `VariableID:2020:24` | COLOR | `{"r":0.9019607843137255,"g":0.3137254901960784,"b":0.3137254901960784,"a":1}` | created | --lose-color; match:a.LrFgBN.M7iB6u:color; match:a.LrFgBN.M7iB6u:backgroundColor; tournament:a.LrFgBN.M7iB6u:color; tournament:a.LrFgBN.M7iB6u:backgroundColor |
-| `color/primitive/f1bd0059` | `VariableID:2020:25` | COLOR | `{"r":0.9450980392156862,"g":0.7411764705882353,"b":0,"a":0.34901960784313724}` | created | --color-bg-highlight |
-| `primitive/yellow` | `VariableID:2014:3` | COLOR | `"#f1bd00"` | reused | --link-hover-color; --Background-hover-color; home:button._90tLYO.kI1rC5:backgroundColor; home:a._90tLYO._39A9U4.kI1rC5.azEMig:backgroundColor; home:button._90tLYO.GmbF1o._39A9U4.kI1rC5._68k6Vj:backgroundColor |
-| `color/primitive/f22f45ff` | `VariableID:2020:26` | COLOR | `{"r":0.9490196078431372,"g":0.1843137254901961,"b":0.27058823529411763,"a":1}` | created | --color-error |
-| `color/primitive/f82f2fff` | `VariableID:2020:27` | COLOR | `{"r":0.9725490196078431,"g":0.1843137254901961,"b":0.1843137254901961,"a":1}` | created | --quiz-color-error |
-| `color/primitive/f8f8f8ff` | `VariableID:2020:28` | COLOR | `{"r":0.9725490196078431,"g":0.9725490196078431,"b":0.9725490196078431,"a":1}` | created | news:svg.szWnQC:color; news:svg.szWnQC.ETnrmb:color; article:svg.szWnQC:color; article:svg.szWnQC.ETnrmb:color |
-| `color/primitive/ff001fff` | `VariableID:2020:29` | COLOR | `{"r":1,"g":0,"b":0.12156862745098039,"a":1}` | created | match:a.KLAEkY.fPDPk9:backgroundColor |
-| `color/primitive/ffffff4d` | `VariableID:2020:30` | COLOR | `{"r":1,"g":1,"b":1,"a":0.30196078431372547}` | created | --ResultTable-line-color |
-| `color/primitive/ffffff80` | `VariableID:2020:31` | COLOR | `{"r":1,"g":1,"b":1,"a":0.5}` | created | home:svg._5pEYKa:color; news:svg._5pEYKa:color; category:svg._5pEYKa:color; categoryHockey:svg._5pEYKa:color; article:svg._5pEYKa:color |
-| `color/primitive/ffffff99` | `VariableID:2020:32` | COLOR | `{"r":1,"g":1,"b":1,"a":0.6}` | created | --Player-no-photo-color |
-| `color/primitive/ffffffff` | `VariableID:2020:33` | COLOR | `{"r":1,"g":1,"b":1,"a":1}` | created | --SkewSquare-color; --StatusText-text-color; --Popup-background-color; home:#top-navigation:color; home:nav.bE023A:color |
-| `color/primitive/2284e6ff` | `VariableID:2020:34` | COLOR | `{"r":0.13333333333333333,"g":0.5176470588235295,"b":0.9019607843137255,"a":1}` | created | details.json a.h21BB0 color |
-| `color/primitive/333333ff` | `VariableID:2020:35` | COLOR | `{"r":0.2,"g":0.2,"b":0.2,"a":1}` | created | design-tokens.md observed color |
-| `color/primitive/f4f4f4ff` | `VariableID:2020:36` | COLOR | `{"r":0.9568627450980393,"g":0.9568627450980393,"b":0.9568627450980393,"a":1}` | created | design-tokens.md observed background |
-| `color/primitive/ffffff33` | `VariableID:2020:37` | COLOR | `{"r":1,"g":1,"b":1,"a":0.2}` | created | tournament-1440.json select border |
-| `color/text/primary` | `VariableID:2020:38` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2014:5"}` | created | Root --link-color |
-| `color/background/surface` | `VariableID:2020:39` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:33"}` | created | Root --Popup-background-color |
-| `color/text/body` | `VariableID:2020:40` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:17"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/text/article` | `VariableID:2020:41` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:13"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/text/inverse` | `VariableID:2020:42` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:33"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/text/muted` | `VariableID:2020:43` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:19"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/text/hockey` | `VariableID:2020:44` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:34"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/background/header` | `VariableID:2020:45` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2014:5"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/background/highlight` | `VariableID:2020:46` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:25"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/background/overlay` | `VariableID:2020:47` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:8"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/border/default` | `VariableID:2020:48` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:22"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/border/select-inverse` | `VariableID:2020:49` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:37"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/action/link-hover` | `VariableID:2020:50` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2014:3"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/status/success` | `VariableID:2020:51` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:11"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/status/error` | `VariableID:2020:52` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:26"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/status/win` | `VariableID:2020:53` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:12"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/status/lose` | `VariableID:2020:54` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:24"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `color/status/draw` | `VariableID:2020:55` | COLOR | `{"type":"VARIABLE_ALIAS","id":"VariableID:2020:23"}` | created | Audit declared or computed usage; semantic naming proposed |
-| `button/fill/default` | `VariableID:2014:6` | COLOR | `"alias VariableID:2014:3"` | reused | Validated existing Button foundation; preserved |
-| `button/fill/hover` | `VariableID:2014:7` | COLOR | `"alias VariableID:2014:4"` | reused | Validated existing Button foundation; preserved |
-| `button/label` | `VariableID:2014:8` | COLOR | `"alias VariableID:2014:5"` | reused | Validated existing Button foundation; preserved |
-| `button/height` | `VariableID:2014:12` | FLOAT | `48` | reused | Validated existing Button foundation; preserved |
-| `button/min-width` | `VariableID:2014:13` | FLOAT | `170` | reused | Validated existing Button foundation; preserved |
-| `button/spacing/zero` | `VariableID:2014:10` | FLOAT | `0` | reused | Verified zero padding / gap |
-| `spacing/2` | `VariableID:2020:56` | FLOAT | `2` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `spacing/3-5` | `VariableID:2020:57` | FLOAT | `3.5` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `spacing/4` | `VariableID:2020:58` | FLOAT | `4` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `spacing/5` | `VariableID:2020:59` | FLOAT | `5` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `spacing/7` | `VariableID:2020:60` | FLOAT | `7` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `spacing/8` | `VariableID:2020:61` | FLOAT | `8` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `button/padding/inline` | `VariableID:2014:9` | FLOAT | `10` | reused | Verified shared 10px spacing |
-| `spacing/11` | `VariableID:2020:62` | FLOAT | `11` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `spacing/12` | `VariableID:2020:63` | FLOAT | `12` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `spacing/12-5` | `VariableID:2020:64` | FLOAT | `12.5` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `spacing/16` | `VariableID:2020:65` | FLOAT | `16` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `spacing/19` | `VariableID:2020:66` | FLOAT | `19` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `spacing/24` | `VariableID:2020:67` | FLOAT | `24` | created | Repeated measured padding/margin/gap in audit; normalized metric, not a claimed CSS token |
-| `radius/0` | `VariableID:2020:68` | FLOAT | `0` | created | Verified independent radius value from audit; Button uses canonical radius/button instead |
-| `radius/2` | `VariableID:2020:69` | FLOAT | `2` | created | Verified independent radius value from audit; Button uses canonical radius/button instead |
-| `radius/3` | `VariableID:2020:70` | FLOAT | `3` | created | Verified independent radius value from audit; Button uses canonical radius/button instead |
-| `radius/3-5` | `VariableID:2020:71` | FLOAT | `3.5` | created | Verified independent radius value from audit; Button uses canonical radius/button instead |
-| `radius/4` | `VariableID:2020:72` | FLOAT | `4` | created | Verified independent radius value from audit; Button uses canonical radius/button instead |
-| `radius/8` | `VariableID:2020:73` | FLOAT | `8` | created | Verified independent radius value from audit; Button uses canonical radius/button instead |
-| `radius/14` | `VariableID:2020:74` | FLOAT | `14` | created | Verified independent radius value from audit; Button uses canonical radius/button instead |
-| `radius/button` | `VariableID:2014:11` | FLOAT | `4` | reused | User-confirmed canonical Button radius 4px; do not change |
-| `border/width/0` | `VariableID:2020:75` | FLOAT | `0` | created | Measured border widths |
-| `border/width/1` | `VariableID:2020:76` | FLOAT | `1` | created | Measured border widths |
-| `layout/container/desktop` | `VariableID:2020:77` | FLOAT | `1032` | created | Audit home measurements at 1440/1920, 768 and 390; reference only, not automatic responsive logic |
-| `layout/container/tablet` | `VariableID:2020:78` | FLOAT | `688` | created | Audit home measurements at 1440/1920, 768 and 390; reference only, not automatic responsive logic |
-| `layout/container/mobile` | `VariableID:2020:79` | FLOAT | `358` | created | Audit home measurements at 1440/1920, 768 and 390; reference only, not automatic responsive logic |
-| `layout/grid/desktop-column` | `VariableID:2020:80` | FLOAT | `64` | created | Audit home measurements at 1440/1920, 768 and 390; reference only, not automatic responsive logic |
-| `layout/grid/desktop-gap` | `VariableID:2020:81` | FLOAT | `24` | created | Audit home measurements at 1440/1920, 768 and 390; reference only, not automatic responsive logic |
-| `layout/grid/mobile-gap` | `VariableID:2020:82` | FLOAT | `8` | created | Audit home measurements at 1440/1920, 768 and 390; reference only, not automatic responsive logic |
+88 прежних объектов переименованы на месте. Их типы, значения, алиасы, области и ID режимов сохранены. Новые значения имеют отдельные ID.
 
-## Text Styles
+| Переменная | ID | Тип | Значения по ID режима | Области | Синтаксис | Источник |
+|---|---|---|---|---|---|---|
+| `цвет/базовый/жёлтый` | `VariableID:2014:3` | COLOR | `{"2014:0":{"r":0.9450980424880981,"g":0.7411764860153198,"b":0,"a":1}}` | `[]` | `{"WEB":"#f1bd00"}` | --link-hover-color; --Background-hover-color; home:button._90tLYO.kI1rC5:backgroundColor; home:a._90tLYO._39A9U4.kI1rC5.azEMig:backgroundColor; home:button._90tLYO.GmbF1o._39A9U4.kI1rC5._68k6Vj:backgroundColor |
+| `цвет/базовый/жёлтый-при-наведении` | `VariableID:2014:4` | COLOR | `{"2014:0":{"r":0.886274516582489,"g":0.6941176652908325,"b":0,"a":1}}` | `[]` | `{"WEB":"#e2b100"}` | Наведение Кнопки повторно проверено на предыдущем этапе |
+| `цвет/базовый/чёрный` | `VariableID:2014:5` | COLOR | `{"2014:0":{"r":0,"g":0,"b":0,"a":1}}` | `[]` | `{"WEB":"#000000"}` | --Tooltip-arrow-color; --link-color; --swiper-pagination-color; home:#top-navigation:backgroundColor; home:nav.bE023A:backgroundColor |
+| `кнопка/заливка/по-умолчанию` | `VariableID:2014:6` | COLOR | `{"2014:0":{"type":"VARIABLE_ALIAS","id":"VariableID:2014:3"}}` | `["FRAME_FILL","SHAPE_FILL"]` | `{"WEB":"var(--link-hover-color)"}` | Прежняя проверенная основа Кнопки; сохранена |
+| `кнопка/заливка/при-наведении` | `VariableID:2014:7` | COLOR | `{"2014:0":{"type":"VARIABLE_ALIAS","id":"VariableID:2014:4"}}` | `["FRAME_FILL","SHAPE_FILL"]` | `{"WEB":"#e2b100"}` | Прежняя проверенная основа Кнопки; сохранена |
+| `кнопка/текст` | `VariableID:2014:8` | COLOR | `{"2014:0":{"type":"VARIABLE_ALIAS","id":"VariableID:2014:5"}}` | `["TEXT_FILL"]` | `{"WEB":"#000000"}` | Прежняя проверенная основа Кнопки; сохранена |
+| `кнопка/отступ/горизонтальный` | `VariableID:2014:9` | FLOAT | `{"2014:0":10}` | `["GAP"]` | `{"WEB":"var(--Button-side-padding)"}` | Проверенный общий отступ 10 пкс |
+| `кнопка/отступ/нулевой` | `VariableID:2014:10` | FLOAT | `{"2014:0":0}` | `["GAP"]` | `{"WEB":"0px"}` | Проверенные нулевые отступы и интервал |
+| `радиус/кнопка` | `VariableID:2014:11` | FLOAT | `{"2014:0":4}` | `["CORNER_RADIUS"]` | `{"WEB":"4px"}` | Утверждённый пользователем радиус Кнопки 4 пкс |
+| `кнопка/высота` | `VariableID:2014:12` | FLOAT | `{"2014:0":48}` | `["WIDTH_HEIGHT"]` | `{"WEB":"var(--Button-height)"}` | Прежняя проверенная основа Кнопки; сохранена |
+| `кнопка/минимальная-ширина` | `VariableID:2014:13` | FLOAT | `{"2014:0":170}` | `["WIDTH_HEIGHT"]` | `{"WEB":"var(--min-width)"}` | Прежняя проверенная основа Кнопки; сохранена |
+| `цвет/базовый/00000000` | `VariableID:2020:6` | COLOR | `{"2020:0":{"r":0,"g":0,"b":0,"a":0}}` | `[]` | `{"WEB":"#00000000"}` | --ScrollShadow-color-end; home:main:backgroundColor; home:a.yZz4oT:backgroundColor; home:div.b-o8ff.MZlQie:backgroundColor; home:a.VXNO7t:backgroundColor |
+| `цвет/базовый/00000033` | `VariableID:2020:7` | COLOR | `{"2020:0":{"r":0,"g":0,"b":0,"a":0.20000000298023224}}` | `[]` | `{"WEB":"#00000033"}` | --ScrollShadow-color-start |
+| `цвет/базовый/00000099` | `VariableID:2020:8` | COLOR | `{"2020:0":{"r":0,"g":0,"b":0,"a":0.6000000238418579}}` | `[]` | `{"WEB":"#00000099"}` | --Background-blackout |
+| `цвет/базовый/000000cc` | `VariableID:2020:9` | COLOR | `{"2020:0":{"r":0,"g":0,"b":0,"a":0.800000011920929}}` | `[]` | `{"WEB":"#000000cc"}` | --RangeResult-promo-bg-color |
+| `цвет/базовый/007affff` | `VariableID:2020:10` | COLOR | `{"2020:0":{"r":0,"g":0.47843137383461,"b":1,"a":1}}` | `[]` | `{"WEB":"#007affff"}` | --swiper-theme-color |
+| `цвет/базовый/087f55ff` | `VariableID:2020:11` | COLOR | `{"2020:0":{"r":0.0313725508749485,"g":0.49803921580314636,"b":0.3333333432674408,"a":1}}` | `[]` | `{"WEB":"#087f55ff"}` | --color-success |
+| `цвет/базовый/08995cff` | `VariableID:2020:12` | COLOR | `{"2020:0":{"r":0.0313725508749485,"g":0.6000000238418579,"b":0.3607843220233917,"a":1}}` | `[]` | `{"WEB":"#08995cff"}` | --win-color; match:a.KLAEkY.vGC8ua:backgroundColor; match:a.LrFgBN.oS593X:color; match:a.LrFgBN.oS593X:backgroundColor; tournament:a.LrFgBN.oS593X:color |
+| `цвет/базовый/121212ff` | `VariableID:2020:13` | COLOR | `{"2020:0":{"r":0.07058823853731155,"g":0.07058823853731155,"b":0.07058823853731155,"a":1}}` | `[]` | `{"WEB":"#121212ff"}` | news:main:color; news:h1._8soirT:color; news:div.b-o8ff.MZlQie:color; news:svg.wuy-wK:color; news:svg.PPT3kW:color |
+| `цвет/базовый/141419ff` | `VariableID:2020:14` | COLOR | `{"2020:0":{"r":0.0784313753247261,"g":0.0784313753247261,"b":0.09803921729326248,"a":1}}` | `[]` | `{"WEB":"#141419ff"}` | news:svg.DwpFz_:color |
+| `цвет/базовый/181818ff` | `VariableID:2020:15` | COLOR | `{"2020:0":{"r":0.0941176488995552,"g":0.0941176488995552,"b":0.0941176488995552,"a":1}}` | `[]` | `{"WEB":"#181818ff"}` | match:a._34GSq9.rZrGsp:color |
+| `цвет/базовый/298e64ff` | `VariableID:2020:16` | COLOR | `{"2020:0":{"r":0.16078431904315948,"g":0.5568627715110779,"b":0.3921568691730499,"a":1}}` | `[]` | `{"WEB":"#298e64ff"}` | --quiz-color-success |
+| `цвет/базовый/373a3cff` | `VariableID:2020:17` | COLOR | `{"2020:0":{"r":0.21568627655506134,"g":0.22745098173618317,"b":0.23529411852359772,"a":1}}` | `[]` | `{"WEB":"#373a3cff"}` | --body-color; home:main:color; home:footer.uQs9Iu:color; home:div.b-o8ff.MZlQie:color; news:footer.uQs9Iu:color |
+| `цвет/базовый/55555580` | `VariableID:2020:18` | COLOR | `{"2020:0":{"r":0.3333333432674408,"g":0.3333333432674408,"b":0.3333333432674408,"a":0.5}}` | `[]` | `{"WEB":"#55555580"}` | match:a._34GSq9:backgroundColor |
+| `цвет/базовый/9a9a9aff` | `VariableID:2020:19` | COLOR | `{"2020:0":{"r":0.6039215922355652,"g":0.6039215922355652,"b":0.6039215922355652,"a":1}}` | `[]` | `{"WEB":"#9a9a9aff"}` | category:a.IXZ-p_:color; match:h1:color |
+| `цвет/базовый/a3a3a3ff` | `VariableID:2020:20` | COLOR | `{"2020:0":{"r":0.6392157077789307,"g":0.6392157077789307,"b":0.6392157077789307,"a":1}}` | `[]` | `{"WEB":"#a3a3a3ff"}` | match:svg.pVyi9C:color |
+| `цвет/базовый/aaaaaaff` | `VariableID:2020:21` | COLOR | `{"2020:0":{"r":0.6666666865348816,"g":0.6666666865348816,"b":0.6666666865348816,"a":1}}` | `[]` | `{"WEB":"#aaaaaaff"}` | home:svg:color; news:svg:color; category:svg:color; categoryHockey:svg:color; article:svg:color |
+| `цвет/базовый/ddddddff` | `VariableID:2020:22` | COLOR | `{"2020:0":{"r":0.8666666746139526,"g":0.8666666746139526,"b":0.8666666746139526,"a":1}}` | `[]` | `{"WEB":"#ddddddff"}` | news:button.foizjG:color; news:svg.B8gAbQ:color; --ResultTable-font-color; match:a.LrFgBN:color; match:a.LrFgBN:backgroundColor |
+| `цвет/базовый/e5b400ff` | `VariableID:2020:23` | COLOR | `{"2020:0":{"r":0.8980392217636108,"g":0.7058823704719543,"b":0,"a":1}}` | `[]` | `{"WEB":"#e5b400ff"}` | --draw-color |
+| `цвет/базовый/e65050ff` | `VariableID:2020:24` | COLOR | `{"2020:0":{"r":0.9019607901573181,"g":0.3137255012989044,"b":0.3137255012989044,"a":1}}` | `[]` | `{"WEB":"#e65050ff"}` | --lose-color; match:a.LrFgBN.M7iB6u:color; match:a.LrFgBN.M7iB6u:backgroundColor; tournament:a.LrFgBN.M7iB6u:color; tournament:a.LrFgBN.M7iB6u:backgroundColor |
+| `цвет/базовый/f1bd0059` | `VariableID:2020:25` | COLOR | `{"2020:0":{"r":0.9450980424880981,"g":0.7411764860153198,"b":0,"a":0.3490196168422699}}` | `[]` | `{"WEB":"#f1bd0059"}` | --color-bg-highlight |
+| `цвет/базовый/f22f45ff` | `VariableID:2020:26` | COLOR | `{"2020:0":{"r":0.9490196108818054,"g":0.18431372940540314,"b":0.2705882489681244,"a":1}}` | `[]` | `{"WEB":"#f22f45ff"}` | --color-error |
+| `цвет/базовый/f82f2fff` | `VariableID:2020:27` | COLOR | `{"2020:0":{"r":0.9725490212440491,"g":0.18431372940540314,"b":0.18431372940540314,"a":1}}` | `[]` | `{"WEB":"#f82f2fff"}` | --quiz-color-error |
+| `цвет/базовый/f8f8f8ff` | `VariableID:2020:28` | COLOR | `{"2020:0":{"r":0.9725490212440491,"g":0.9725490212440491,"b":0.9725490212440491,"a":1}}` | `[]` | `{"WEB":"#f8f8f8ff"}` | news:svg.szWnQC:color; news:svg.szWnQC.ETnrmb:color; article:svg.szWnQC:color; article:svg.szWnQC.ETnrmb:color |
+| `цвет/базовый/ff001fff` | `VariableID:2020:29` | COLOR | `{"2020:0":{"r":1,"g":0,"b":0.12156862765550613,"a":1}}` | `[]` | `{"WEB":"#ff001fff"}` | match:a.KLAEkY.fPDPk9:backgroundColor |
+| `цвет/базовый/ffffff4d` | `VariableID:2020:30` | COLOR | `{"2020:0":{"r":1,"g":1,"b":1,"a":0.3019607961177826}}` | `[]` | `{"WEB":"#ffffff4d"}` | --ResultTable-line-color |
+| `цвет/базовый/ffffff80` | `VariableID:2020:31` | COLOR | `{"2020:0":{"r":1,"g":1,"b":1,"a":0.5}}` | `[]` | `{"WEB":"#ffffff80"}` | home:svg._5pEYKa:color; news:svg._5pEYKa:color; category:svg._5pEYKa:color; categoryHockey:svg._5pEYKa:color; article:svg._5pEYKa:color |
+| `цвет/базовый/ffffff99` | `VariableID:2020:32` | COLOR | `{"2020:0":{"r":1,"g":1,"b":1,"a":0.6000000238418579}}` | `[]` | `{"WEB":"#ffffff99"}` | --Player-no-photo-color |
+| `цвет/базовый/ffffffff` | `VariableID:2020:33` | COLOR | `{"2020:0":{"r":1,"g":1,"b":1,"a":1}}` | `[]` | `{"WEB":"#ffffffff"}` | --SkewSquare-color; --StatusText-text-color; --Popup-background-color; home:#top-navigation:color; home:nav.bE023A:color |
+| `цвет/базовый/2284e6ff` | `VariableID:2020:34` | COLOR | `{"2020:0":{"r":0.13333334028720856,"g":0.5176470875740051,"b":0.9019607901573181,"a":1}}` | `[]` | `{"WEB":"#2284e6ff"}` | details.json a.h21BB0 цвет |
+| `цвет/базовый/333333ff` | `VariableID:2020:35` | COLOR | `{"2020:0":{"r":0.20000000298023224,"g":0.20000000298023224,"b":0.20000000298023224,"a":1}}` | `[]` | `{"WEB":"#333333ff"}` | design-tokens.md наблюдённый цвет |
+| `цвет/базовый/f4f4f4ff` | `VariableID:2020:36` | COLOR | `{"2020:0":{"r":0.95686274766922,"g":0.95686274766922,"b":0.95686274766922,"a":1}}` | `[]` | `{"WEB":"#f4f4f4ff"}` | design-tokens.md наблюдённый фон |
+| `цвет/базовый/ffffff33` | `VariableID:2020:37` | COLOR | `{"2020:0":{"r":1,"g":1,"b":1,"a":0.20000000298023224}}` | `[]` | `{"WEB":"#ffffff33"}` | tournament-1440.json граница списка |
+| `цвет/текст/основной` | `VariableID:2020:38` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2014:5"}}` | `["TEXT_FILL"]` | `{"WEB":"var(--link-color)"}` | Корневая переменная --link-color |
+| `цвет/фон/поверхность` | `VariableID:2020:39` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:33"}}` | `["FRAME_FILL","SHAPE_FILL"]` | `{"WEB":"var(--Popup-background-color)"}` | Корневая переменная --Popup-background-color |
+| `цвет/текст/основной-текст` | `VariableID:2020:40` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:17"}}` | `["TEXT_FILL"]` | `{"WEB":"var(--body-color)"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/текст/статья` | `VariableID:2020:41` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:13"}}` | `["TEXT_FILL"]` | `{"WEB":"#121212"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/текст/инверсный` | `VariableID:2020:42` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:33"}}` | `["TEXT_FILL"]` | `{"WEB":"var(--StatusText-text-color)"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/текст/вторичный` | `VariableID:2020:43` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:19"}}` | `["TEXT_FILL"]` | `{"WEB":"#9a9a9a"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/текст/хоккей` | `VariableID:2020:44` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:34"}}` | `["TEXT_FILL"]` | `{"WEB":"#2284e6"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/фон/шапка` | `VariableID:2020:45` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2014:5"}}` | `["FRAME_FILL"]` | `{"WEB":"#000000"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/фон/подсветка` | `VariableID:2020:46` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:25"}}` | `["FRAME_FILL"]` | `{"WEB":"var(--color-bg-highlight)"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/фон/затемнение` | `VariableID:2020:47` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:8"}}` | `["FRAME_FILL"]` | `{"WEB":"var(--Background-blackout)"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/граница/основная` | `VariableID:2020:48` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:22"}}` | `["STROKE_COLOR"]` | `{"WEB":"#dddddd"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/граница/список-инверсный` | `VariableID:2020:49` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:37"}}` | `["STROKE_COLOR"]` | `{"WEB":"#ffffff33"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/действие/ссылка-при-наведении` | `VariableID:2020:50` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2014:3"}}` | `["TEXT_FILL"]` | `{"WEB":"var(--link-hover-color)"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/состояние/успех` | `VariableID:2020:51` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:11"}}` | `["ALL_FILLS"]` | `{"WEB":"var(--color-success)"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/состояние/ошибка` | `VariableID:2020:52` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:26"}}` | `["ALL_FILLS"]` | `{"WEB":"var(--color-error)"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/состояние/победа` | `VariableID:2020:53` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:12"}}` | `["ALL_FILLS"]` | `{"WEB":"var(--win-color)"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/состояние/поражение` | `VariableID:2020:54` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:24"}}` | `["ALL_FILLS"]` | `{"WEB":"var(--lose-color)"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `цвет/состояние/ничья` | `VariableID:2020:55` | COLOR | `{"2020:1":{"type":"VARIABLE_ALIAS","id":"VariableID:2020:23"}}` | `["ALL_FILLS"]` | `{"WEB":"var(--draw-color)"}` | Объявленное либо вычисленное значение аудита; семантическое имя библиотеки |
+| `отступ/2` | `VariableID:2020:56` | FLOAT | `{"2020:2":2}` | `["GAP"]` | `{"WEB":"2px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/3-5` | `VariableID:2020:57` | FLOAT | `{"2020:2":3.5}` | `["GAP"]` | `{"WEB":"3.5px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/4` | `VariableID:2020:58` | FLOAT | `{"2020:2":4}` | `["GAP"]` | `{"WEB":"4px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/5` | `VariableID:2020:59` | FLOAT | `{"2020:2":5}` | `["GAP"]` | `{"WEB":"5px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/7` | `VariableID:2020:60` | FLOAT | `{"2020:2":7}` | `["GAP"]` | `{"WEB":"7px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/8` | `VariableID:2020:61` | FLOAT | `{"2020:2":8}` | `["GAP"]` | `{"WEB":"8px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/11` | `VariableID:2020:62` | FLOAT | `{"2020:2":11}` | `["GAP"]` | `{"WEB":"11px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/12` | `VariableID:2020:63` | FLOAT | `{"2020:2":12}` | `["GAP"]` | `{"WEB":"12px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/12-5` | `VariableID:2020:64` | FLOAT | `{"2020:2":12.5}` | `["GAP"]` | `{"WEB":"12.5px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/16` | `VariableID:2020:65` | FLOAT | `{"2020:2":16}` | `["GAP"]` | `{"WEB":"16px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/19` | `VariableID:2020:66` | FLOAT | `{"2020:2":19}` | `["GAP"]` | `{"WEB":"19px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `отступ/24` | `VariableID:2020:67` | FLOAT | `{"2020:2":24}` | `["GAP"]` | `{"WEB":"24px"}` | Измеренные отступы аудита; нормализованная метрика, не объявленная CSS-переменная |
+| `радиус/0` | `VariableID:2020:68` | FLOAT | `{"2020:2":0}` | `["CORNER_RADIUS"]` | `{"WEB":"0px"}` | Независимый радиус из аудита; Кнопка использует каноническую переменную |
+| `радиус/2` | `VariableID:2020:69` | FLOAT | `{"2020:2":2}` | `["CORNER_RADIUS"]` | `{"WEB":"2px"}` | Независимый радиус из аудита; Кнопка использует каноническую переменную |
+| `радиус/3` | `VariableID:2020:70` | FLOAT | `{"2020:2":3}` | `["CORNER_RADIUS"]` | `{"WEB":"3px"}` | Независимый радиус из аудита; Кнопка использует каноническую переменную |
+| `радиус/3-5` | `VariableID:2020:71` | FLOAT | `{"2020:2":3.5}` | `["CORNER_RADIUS"]` | `{"WEB":"3.5px"}` | Независимый радиус из аудита; Кнопка использует каноническую переменную |
+| `радиус/4` | `VariableID:2020:72` | FLOAT | `{"2020:2":4}` | `["CORNER_RADIUS"]` | `{"WEB":"4px"}` | Независимый радиус из аудита; Кнопка использует каноническую переменную |
+| `радиус/8` | `VariableID:2020:73` | FLOAT | `{"2020:2":8}` | `["CORNER_RADIUS"]` | `{"WEB":"8px"}` | Независимый радиус из аудита; Кнопка использует каноническую переменную |
+| `радиус/14` | `VariableID:2020:74` | FLOAT | `{"2020:2":14}` | `["CORNER_RADIUS"]` | `{"WEB":"14px"}` | Независимый радиус из аудита; Кнопка использует каноническую переменную |
+| `граница/ширина/0` | `VariableID:2020:75` | FLOAT | `{"2020:2":0}` | `["STROKE_FLOAT"]` | `{"WEB":"0px"}` | Измеренная ширина границы |
+| `граница/ширина/1` | `VariableID:2020:76` | FLOAT | `{"2020:2":1}` | `["STROKE_FLOAT"]` | `{"WEB":"1px"}` | Измеренная ширина границы |
+| `макет/контейнер/десктоп` | `VariableID:2020:77` | FLOAT | `{"2020:2":1032}` | `["WIDTH_HEIGHT"]` | `{"WEB":"1032px"}` | Измерения главной при 1440/1920, 768 и 390; справочное значение без автоматического переключения |
+| `макет/контейнер/планшет` | `VariableID:2020:78` | FLOAT | `{"2020:2":688}` | `["WIDTH_HEIGHT"]` | `{"WEB":"688px"}` | Измерения главной при 1440/1920, 768 и 390; справочное значение без автоматического переключения |
+| `макет/контейнер/мобильный` | `VariableID:2020:79` | FLOAT | `{"2020:2":358}` | `["WIDTH_HEIGHT"]` | `{"WEB":"358px"}` | Измерения главной при 1440/1920, 768 и 390; справочное значение без автоматического переключения |
+| `макет/сетка/колонка-десктоп` | `VariableID:2020:80` | FLOAT | `{"2020:2":64}` | `["WIDTH_HEIGHT"]` | `{"WEB":"64px"}` | Измерения главной при 1440/1920, 768 и 390; справочное значение без автоматического переключения |
+| `макет/сетка/интервал-десктоп` | `VariableID:2020:81` | FLOAT | `{"2020:2":24}` | `["WIDTH_HEIGHT"]` | `{"WEB":"24px"}` | Измерения главной при 1440/1920, 768 и 390; справочное значение без автоматического переключения |
+| `макет/сетка/интервал-мобильный` | `VariableID:2020:82` | FLOAT | `{"2020:2":8}` | `["WIDTH_HEIGHT"]` | `{"WEB":"8px"}` | Измерения главной при 1440/1920, 768 и 390; справочное значение без автоматического переключения |
+| `отступ/1` | `VariableID:2047:44` | FLOAT | `{"2020:2":1}` | `["GAP"]` | `{"WEB":"1px"}` | Интервал группы вкладок по аудиту .xhPjWL |
+| `размер/вкладка/высота` | `VariableID:2047:45` | FLOAT | `{"2020:2":46}` | `["WIDTH_HEIGHT"]` | `{"WEB":"46px"}` | Высота настольной вкладки матча: 46 пкс |
+| `размер/список/высота` | `VariableID:2047:46` | FLOAT | `{"2020:2":38}` | `["WIDTH_HEIGHT"]` | `{"WEB":"38px"}` | Высота закрытого списка сезона: 38 пкс |
+| `цвет/базовый/5f29cc` | `VariableID:2047:47` | COLOR | `{"2020:0":{"r":0.37254902720451355,"g":0.16078431904315948,"b":0.800000011920929,"a":1}}` | `[]` | `{"WEB":"#5f29cc"}` | Подложка бейджа «Эксклюзив»: --Badge-bg-color |
+| `цвет/базовый/999999` | `VariableID:2047:48` | COLOR | `{"2020:0":{"r":0.6000000238418579,"g":0.6000000238418579,"b":0.6000000238418579,"a":1}}` | `[]` | `{"WEB":"#999999"}` | Штрих исходного SVG индикатора списка сезона |
+| `отступ/бейдж/горизонтальный` | `VariableID:2047:160` | FLOAT | `{"2020:2":5.775000095367432}` | `["GAP"]` | `{"WEB":"5.775px"}` | Измеренные горизонтальные отступы em._0jK76e |
+| `отступ/бейдж/вертикальный` | `VariableID:2047:161` | FLOAT | `{"2020:2":4.199999809265137}` | `["GAP"]` | `{"WEB":"4.2px"}` | Измеренные вертикальные отступы em._0jK76e |
+| `радиус/бейдж/эксклюзив` | `VariableID:2047:164` | FLOAT | `{"2020:2":3.1500000953674316}` | `["CORNER_RADIUS"]` | `{"WEB":"3.15px"}` | Псевдоэлемент бейджа: 0,3em при кегле 10,5 |
 
-8 created; existing Button style reused. No Cera or substitute system-font styles created.
+## Коллекции и режимы
 
-| Name | ID | Font / size / line height | Source |
-|---|---|---|---|
-| Sport24 / Heading / Category | `S:91560908b59939b190601431bd937e07ef575458,` | Stag Sans LC Bold 48 / 52.8 | categoryHockey-1440 h1 |
-| Sport24 / Heading / Tournament | `S:f6f08fd677c518468db7400fe4e8fee25cb67e65,` | Stag Sans LC Bold 32 / 35.2 | tournament-1440 h1 |
-| Sport24 / Heading / Tournament mobile | `S:4937de968f2be26186fdbaa71705630316b9415a,` | Stag Sans LC Bold 19.2 / 21.12 | tournament-390 h1 |
-| Sport24 / Heading / Article | `S:fa17c77c48db98b226e30eea6065448949dbd1d0,` | Stag Sans LC Bold 24 / 31.92 | news-1440 h1._8soirT |
-| Sport24 / Heading / Section desktop | `S:703f784cb27b356868b09811c538c8fa4977e14f,` | Stag Sans LC Medium 32 / 40 | match-1440 h2._7FBqFX |
-| Sport24 / Heading / Section mobile | `S:6c4f4197401cf6c44b09e6dd16f383f09c6ff191,` | Stag Sans LC Medium 20 / 24 | match-390 h2._7FBqFX |
-| Sport24 / Label / League | `S:7fe3568444aa1f465dd548ad3beef7eb1060ef80,` | Stag Sans LC Medium 14 / 16 | 5993 CSS .d42p0x and parent font |
-| Sport24 / Link / Match center | `S:4cdb0d29887a3040baf34c0181b9268a20531e7f,` | Stag Sans LC Medium 14 / 14 | news-768 a.xeeGUd |
-| Sport24 / Button / Medium 16 | `S:0dc6b053b9aa097ab4c9afa7c53361f9d85c9f5f,` | Stag Sans LC Medium 16 / 19.2 | Existing validated Button |
+| Коллекция | ID | Режим / ID |
+|---|---|---|
+| Sport24 / Кнопка | `VariableCollectionId:2014:2` | Сайт / `2014:0` |
+| Sport24 / Базовые значения | `VariableCollectionId:2020:3` | Сайт / `2020:0` |
+| Sport24 / Семантика | `VariableCollectionId:2020:4` | Сайт / `2020:1` |
+| Sport24 / Метрики | `VariableCollectionId:2020:5` | Сайт / `2020:2` |
 
-## Effect Style
+## Текстовые стили
 
-Sport24 / Popup / Declared shadow — `S:1c48ecdf6f48e2d35cd17b6f872b55a3ef335549,`. Declared popup shadow0/0/10px, black20%, spread0. No effect/elevation scale invented.
+10 новых, 9 прежних локализованы с сохранением ID. Все значения межбуквенного интервала — 0 пкс. Числа в таблице округлены для чтения; Figma хранит дробные значения с точностью float.
+
+| Стиль | ID | Семейство / начертание | Размер / интерлиньяж | Декорация |
+|---|---|---|---|---|
+| Типографика / Кнопка | `S:0dc6b053b9aa097ab4c9afa7c53361f9d85c9f5f,` | Stag Sans LC / Medium | 16 / 19.2 | Нет |
+| Типографика / Заголовок категории | `S:91560908b59939b190601431bd937e07ef575458,` | Stag Sans LC / Bold | 48 / 52.8 | Нет |
+| Типографика / Заголовок турнира | `S:f6f08fd677c518468db7400fe4e8fee25cb67e65,` | Stag Sans LC / Bold | 32 / 35.2 | Нет |
+| Типографика / Заголовок турнира / Мобильный | `S:4937de968f2be26186fdbaa71705630316b9415a,` | Stag Sans LC / Bold | 19.2 / 21.12 | Нет |
+| Типографика / Заголовок статьи | `S:fa17c77c48db98b226e30eea6065448949dbd1d0,` | Stag Sans LC / Bold | 24 / 31.92 | Нет |
+| Типографика / Заголовок раздела / Десктопный | `S:703f784cb27b356868b09811c538c8fa4977e14f,` | Stag Sans LC / Medium | 32 / 40 | Нет |
+| Типографика / Заголовок раздела / Мобильный | `S:6c4f4197401cf6c44b09e6dd16f383f09c6ff191,` | Stag Sans LC / Medium | 20 / 24 | Нет |
+| Типографика / Метка лиги | `S:7fe3568444aa1f465dd548ad3beef7eb1060ef80,` | Stag Sans LC / Medium | 14 / 16 | Нет |
+| Типографика / Ссылка в матч-центр | `S:4cdb0d29887a3040baf34c0181b9268a20531e7f,` | Stag Sans LC / Medium | 14 / 14 | Нет |
+| Типографика / Основной текст | `S:9db9543677c636c8dd532eb59347d65016651ce3,` | HelveticaNeueCyr / Roman | 16 / 22.4 | Нет |
+| Типографика / Текст новости и ссылка | `S:db8751fcda9bf522680bd8a98b3bcf1dbd770377,` | HelveticaNeueCyr / Roman | 14 / 20.02 | Нет |
+| Типографика / Подпись и метаданные | `S:35cbf1351cdd79c0e9bfdc144ff4671346cdc12d,` | HelveticaNeueCyr / Roman | 12 / 16.8 | Нет |
+| Типографика / Вкладка | `S:6b2bf29a9dda29cdb000f82094f1ef45fbbda1b2,` | HelveticaNeueCyr / Bold | 13 / 20.8 | Нет |
+| Типографика / Выпадающий список | `S:3c9e72befcf00e5c061fca71c5485755e989a29b,` | HelveticaNeueCyr / Roman | 14 / 19.6 | Нет |
+| Типографика / Подпись матча | `S:e89d9a6196c0cae73a93ef0c0a5b2b3e5b5e52e0,` | HelveticaNeueCyr / Roman | 14.4 / 17.28 | Нет |
+| Типографика / Спортивные данные / Счёт | `S:5b516be660601b008ab1795bc4280f4da779dea0,` | HelveticaNeueCyr / Roman | 14 / 14 | Нет |
+| Типографика / Спортивные данные / Выделенный счёт | `S:8252b575811f595acf63f3f8bea5622d633bd55d,` | HelveticaNeueCyr / Bold | 14 / 14 | Нет |
+| Типографика / Текст новости и ссылка / При наведении | `S:45e0232490a2316f382c8042ae7d9d0ad4ee9495,` | HelveticaNeueCyr / Roman | 14 / 20.02 | Подчёркивание |
+| Типографика / Бейдж / Эксклюзив | `S:21cda3e800eac20b8aae46a0da657cb7ee6120b6,` | HelveticaNeueCyr / Bold | 10.5 / 17.85 | Нет |
+
+Источники прежних стилей: categoryHockey-1440 h1; tournament-1440 h1; tournament-390 h1; news-1440 h1._8soirT; match-1440 и match-390 h2._7FBqFX; CSS .d42p0x; news-768 a.xeeGUd; ранее проверенная Кнопка. Новые роли сохраняют размеры аудита, но используют утверждённый HelveticaNeueCyr.
+
+Стиль ссылки при наведении: цвет #f1bd00, толщина 3,1 пкс, смещение −0,16 пкс, `text-decoration-skip-ink: none`. Он применён до связывания текстовых свойств, чтобы сохранить отличия вариантов.
+
+## Стиль эффектов
+
+«Эффекты / Всплывающий блок / Тень» — `S:1c48ecdf6f48e2d35cd17b6f872b55a3ef335549,`: 0/0/10 пкс, чёрный 20%, spread 0. Объект переименован без пересоздания. Источник: объявленная --Popup-box-shadow.
