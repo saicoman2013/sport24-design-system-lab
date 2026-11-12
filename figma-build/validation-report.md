@@ -1,58 +1,59 @@
-# Sport24 validation report
+# Sport24 — Отчёт проверки
 
-## Result
+Дата: 12 ноября 2026 года. Проверены текущие нативные объекты существующего Figma-файла. Итог относится к согласованному составу этапа 2; остальные составные паттерны относятся к этапу 3.
 
-Supported batches passed native structure, variable binding, editable-property, connection and visual checks. Phase2 remains partial due to unavailable fonts and unverified patterns; see known-limitations.md.
+Создано 12 новых семейств: 14 нативных узлов COMPONENT и 2 COMPONENT_SET. Локализовано 8 существующих семейств: 10 COMPONENT и 2 COMPONENT_SET. Итого 20 семейств, 24 COMPONENT и 4 COMPONENT_SET. Создано 10 текстовых стилей и 8 переменных; локализовано 88 прежних переменных, 4 коллекции, 9 текстовых стилей и 1 стиль эффектов. Всего 96 переменных и 19 текстовых стилей.
 
-77 new Variables; 11 existing Variables reused (88 total). 8 new Text Styles; 1 existing Button Text Style reused. 1 new Effect Style. 8 new native COMPONENT nodes (6 standalone plus 2 Heading variants), 1 new COMPONENT_SET. Existing Button set and its 2 variants preserved. Total on page: 10 COMPONENT nodes and 2 COMPONENT_SET nodes. Four variant members across Button and Section Heading; no duplicate family names.
+## Результаты пакетов
 
-## Batch acceptance
-
-| Batch | Result | Evidence |
+| Пакет | Результат | Подтверждение |
 |---|---|---|
-| 1 Foundations | PASS for available fonts |77 new variables, aliases resolve; no ALL_SCOPES;8 Stag styles; visual specimen reviewed; Button snapshot unchanged |
-| 2 Basic primitives | PASS for supported patterns |6 native components initially; Label overrides and Icon swap tested; source vector descendants; light specimen contrast corrected and reviewed |
-| 3 Interactive | PASS for Button/Icon Button; font-blocked patterns deferred |Button exact IDs/properties retained; default/hover switching and390/768/1440/1920 tests pass; header icon-container reused as Icon Button |
-| 4 Structural | PASS for Section Heading |Native Component Set with2 responsive variants; editable Label; viewport switching; four measured content-width tests pass |
+| Типографика | Пройден | Все 16 начертаний HelveticaNeueCyr загружаются; кириллица проверена визуально; 10 новых текстовых стилей |
+| Локализация | Пройден | 8 прежних семейств переименованы на месте; 88 переменных, 4 коллекции, 9 текстовых стилей, 1 эффект; ID и значения сохранены |
+| Новые компоненты | Пройден с документированными различиями метрик | Ссылка, Вкладка, Группа, закрытый Сезон, метка категории, Эксклюзив и 6 зависимых иконок |
+| Структура и свойства | Пройден | 24 COMPONENT, 4 COMPONENT_SET, все мастера с Auto Layout; текст остаётся редактируемым |
+| Связи и привязки | Пройден | Неразрешённых ссылок на переменные 0; ALL_SCOPES 0; дубликатов имён семейств 0; вложенные экземпляры связаны |
+| Четыре ширины | Пройден в применимых контекстах | 390 / 768 / 1440 / 1920; настольная группа не применяется на первых двух |
 
-## Native structure and bindings
+## Проверка ширин
 
-| Node | Type | Auto Layout | Dimensions | Radius | Text style references |
+Проверочная область: [2048:79](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2048-79). Это набор экземпляров для проверки, не шаблон сайта. Ширины рамок не означают наличие автоматических медиазапросов.
+
+| Ширина | Рамка | Заголовок: ширина / высота / кегль | Кнопка | Сезон | Группа |
 |---|---|---|---|---|---|
-| [ 2014:16 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2014-16) | COMPONENT | HORIZONTAL | 170 × 48 | 4 | S:0dc6b053b9aa097ab4c9afa7c53361f9d85c9f5f, |
-| [ 2014:18 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2014-18) | COMPONENT | HORIZONTAL | 170 × 48 | 4 | S:0dc6b053b9aa097ab4c9afa7c53361f9d85c9f5f, |
-| [ 2021:3 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-3) | COMPONENT | HORIZONTAL | 25 × 18 | 0 |  |
-| [ 2021:6 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-6) | COMPONENT | HORIZONTAL | 18 × 18 | 0 |  |
-| [ 2021:9 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-9) | COMPONENT | HORIZONTAL | 29 × 20 | 0 |  |
-| [ 2021:12 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-12) | COMPONENT | HORIZONTAL | 29 × 32 | 0 | S:7fe3568444aa1f465dd548ad3beef7eb1060ef80, |
-| [ 2021:14 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-14) | COMPONENT | HORIZONTAL | 246 × 59 | 0 | S:4cdb0d29887a3040baf34c0181b9268a20531e7f, |
-| [ 2021:19 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-19) | COMPONENT | HORIZONTAL | 40 × 44 | 4 |  |
-| [ 2024:24 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2024-24) | COMPONENT | HORIZONTAL | 171 × 40 | 0 | S:703f784cb27b356868b09811c538c8fa4977e14f, |
-| [ 2024:26 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2024-26) | COMPONENT | HORIZONTAL | 358 × 24 | 0 | S:6c4f4197401cf6c44b09e6dd16f383f09c6ff191, |
+| 390 | [2048:80](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2048-80) | 358 / 24 / 20 | 170 × 48 | 82,84375 × 38 | Не применяется; другая навигация сайта |
+| 768 | [2048:110](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2048-110) | 688 / 40 / 32 | 170 × 48 | 82,84375 × 38 | Не применяется; другая навигация сайта |
+| 1440 | [2048:140](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2048-140) | 1032 / 40 / 32 | 170 × 48 | 82,84375 × 38 | 856 × 46, 5 связанных экземпляров |
+| 1920 | [2048:212](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2048-212) | 1032 / 40 / 32 | 170 × 48 | 82,84375 × 38 | 856 × 46, 5 связанных экземпляров |
 
-Broken bound-variable references:0. Duplicate component family names:0. Variables with ALL_SCOPES:0. All created component nodes use native Auto Layout. Native Label text layers remain editable; vector icons remain vector paths.
+На всех четырёх ширинах проверены: свойство текста ссылки; переход «По умолчанию → При наведении → По умолчанию» с сохранением текста; отсутствие растяжения иконки 25 × 18; видимость подписи сезона в одну строку; границы дочерних контейнеров внутри рамки. На двух настольных ширинах дополнительно переключена вложенная вкладка «Неактивная → Активная → Неактивная» и подтверждены связи всех пяти экземпляров. Заголовок использует вручную выбранный адаптивный вариант.
 
-## Responsive checks
+Ранее выполненные проверки специализированной ссылки матч-центра в контейнерах 358/688/1032/1032 и переключение заголовка сохраняют силу: эта ссылка измерена в контексте 768, а проверка изменения ширины не доказывает одинаковую видимость на сайте во всех контекстах.
 
-Button: minimum170×48 and radius4 retained at390/768/1440/1920. Variant switch Default→Hover→Default passed.
+## Сохранность Кнопки
 
-Section Heading uses actual content widths:
+Набор `2015:2`, варианты `2014:16` и `2014:18` сохранены. Каждый — COMPONENT с горизонтальным Auto Layout, 170 × 48, Stag Sans LC Medium 16/19,2, прежними цветами и отступами 0/10. Каждый из четырёх углов обоих вариантов равен 4 и связан с **тем же** объектом `VariableID:2014:11`, теперь `радиус/кнопка`. Значение переменной 4.
 
-| Viewport | Content width | Height | Font size | Passed |
-|---|---|---|---|---|
-| 390 | 358 | 24 | 20 | True |
-| 768 | 688 | 40 | 32 | True |
-| 1440 | 1032 | 40 | 32 | True |
-| 1920 | 1032 | 40 | 32 | True |
+Исходный экземпляр `2015:3` по итоговой проверке связан с `2014:16`. Переключение исходного экземпляра через русское `Состояние` проверено с возвратом к исходному варианту. Текстовое свойство сохраняет суффикс `#2015:0`; значение «Загрузить еще» не заменялось при переводе. Дубликат семейства не создавался.
 
-Text Link: fill-container stress tests passed at content358/688/1032/1032; nested icon stays29×20. These stress tests establish Figma resizing only, not website visibility or layout equivalence at all widths. The source control was specifically measured at the768px context.
+## Локализация и сохранение данных
 
-Heading variant switching, Label text override, natural-width label growth, Icon INSTANCE_SWAP and connected nested instances passed. Icons remain fixed-size.
+Сравнение до/после локализации подтвердило неизменность типов, значений, алиасов, областей применения и технического синтаксиса 88 прежних переменных. Их имена переведены без удаления объектов. ID коллекций и режимов сохранены; отображаемое имя режима — «Сайт». Существующие привязки продолжают ссылаться на те же ID.
 
-## Existing-design preservation
+Переименованы прежние свойства, включая `Label#2015:0 → Текст#2015:0`, `State → Состояние`, `Viewport → Адаптивность`, `Icon → Иконка`, и соответствующие значения вариантов. Обход холста не нашёл оставшихся названий слоёв с исходными Button/Label/State/Default/Hover/Desktop/Mobile/Frame/Vector/Rectangle/Icon/Group/Text. Проверены русские видимые подписи; Sport24, технические семейства шрифтов, ID и hex-значения сохранены.
 
-Original Button set2015:2; Default2014:16; Hover2014:18; original instance2015:3 still connected to2014:16. All four corners remain bound to VariableID:2014:11, radius/button4. Dimensions, fills, text styles, Label and State definitions preserved. Original test section2014:15 retains bounds x120/y120/520×240. All new sections are outside its bounds. No existing unrelated layer was deleted, moved, renamed, detached or edited.
+Начальные координаты разделов сохранены: тестовый 120/120; основы 800/120; примитивы 800/2219; компоненты 2400/2219; составные 800/4279; паттерны 2400/4279. Границы разделов расширены под новые материалы. Удаление, перемещение либо отсоединение внесистемных дизайнов не выполнялось. Ранее существующие системные объекты локализованы в рамках прямого задания пользователя.
 
-## Visual review
+## Визуальная проверка
 
-Figma screenshots were reviewed for Foundations, primitives and interactive/heading specimens. Documentation contrast was corrected, and the resulting render rechecked. No screenshots are used as UI components. Historical audit screenshots and DOM/CSS properties were used for source comparison. Text shaping differs by small subpixel amounts between browser and Figma; see component-registry.md.
+Просмотрены нативные снимки кириллического образца, ссылки с двумя состояниями, блока новых компонентов и всех четырёх проверочных ширин. Исправлены перенос подписи сезона и контекст белой иконки. После исправлений повторно просмотрены затронутые элементы и мобильный/настольный образцы. Геометрия прямых дочерних контейнеров повторно проверена на всех четырёх ширинах: выходов за ширину 0.
+
+Мастера отделены от проверочных экземпляров. Снимки не используются как компоненты. Внутри Превью используются оригинальные PNG логотипов команд, остальные иконки — исходные SVG-пути. Разница естественных размеров текста и геометрии inline-бейджа подробно приведена в component-registry.md; полного пиксельного совпадения двух текстовых движков не заявляется.
+
+## Воспроизводимость источников
+
+Первичный аудит: `/workspace/audit/`, component-inventory.md, design-tokens.md, component-specifications.md, responsive-behavior.md, audit-limitations.md, JSON/CSS и screenshots/. Сохранены ссылки на прежние селекторы details.json, phase2-source.json, home/news/match/tournament viewport JSON.
+
+Повторная проверка: главная https://sport24.ru/; турнир https://sport24.ru/hockey/leagues/nhl; матч https://sport24.ru/hockey/leagues/nhl/match/vegas-golden-nayts-utah-hockey-club-salt-lake-city-2026-11-11 . Измерения актуальных селекторов и исходные значения приведены в реестре компонентов. Хеши классов зависят от сборки сайта.
+
+Playwright и Chromium использованы из существующего окружения. `ignoreHTTPSErrors` включён только для диагностического доступа из окружения с ранее выявленной ошибкой доверия к сертификату прокси. Зависимости не устанавливались, данные сайта не изменялись, формы не отправлялись. В документацию не включены cookies, токены, учётные данные или временные адреса снимков.
