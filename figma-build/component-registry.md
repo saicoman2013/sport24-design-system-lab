@@ -1,63 +1,136 @@
-# Sport24 component registry
+# Sport24 — Реестр компонентов
 
-77 new Variables; 11 existing Variables reused (88 total). 8 new Text Styles; 1 existing Button Text Style reused. 1 new Effect Style. 8 new native COMPONENT nodes (6 standalone plus 2 Heading variants), 1 new COMPONENT_SET. Existing Button set and its 2 variants preserved. Total on page: 10 COMPONENT nodes and 2 COMPONENT_SET nodes. Four variant members across Button and Section Heading; no duplicate family names.
+Создано 12 новых семейств: 14 нативных узлов COMPONENT и 2 COMPONENT_SET. Локализовано 8 существующих семейств: 10 COMPONENT и 2 COMPONENT_SET. Итого 20 семейств, 24 COMPONENT и 4 COMPONENT_SET. Создано 10 текстовых стилей и 8 переменных; локализовано 88 прежних переменных, 4 коллекции, 9 текстовых стилей и 1 стиль эффектов. Всего 96 переменных и 19 текстовых стилей.
 
-All listed assets exist in the target file. Instances and QA frames are not counted as component masters.
+Экземпляры и демонстрационные контейнеры не включены в число мастер-компонентов. Все мастера имеют нативный Auto Layout; векторные иконки сохраняют редактируемые пути. Логотипы команд — оригинальные изображения сайта в нативных заливках, не снимки интерфейса.
 
-| Component family | Native type | Node | Source / scope |
+| Семейство | Тип | Узел | Статус |
 |---|---|---|---|
-| Sport24 / Icon / Menu | COMPONENT | [ 2021:3 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-3) | audit/evidence/details.json div.c6eBIW |
-| Sport24 / Icon / Close | COMPONENT | [ 2021:6 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-6) | audit/evidence/details.json div.meSwEH |
-| Sport24 / Icon / Match Center | COMPONENT | [ 2021:9 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-9) | phase2-source.json news 768 a.xeeGUd svg; CSS29x20 |
-| Sport24 / Label / League | COMPONENT | [ 2021:12 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-12) | news-768 .d42p0x; audit CSS .dB25r0 .d42p0x |
-| Sport24 / Text Link / Match Center | COMPONENT | [ 2021:14 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-14) | news-768 a.xeeGUd and phase2-source.json |
-| Sport24 / Icon Button | COMPONENT | [ 2021:19 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-19) | details.json div.c6eBIW, canonical Button radius override |
-| Sport24 / Section Heading | COMPONENT_SET | [ 2024:28 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2024-28) | match h2._7FBqFX at four viewports |
-| Sport24 / Button | COMPONENT_SET | [ 2015:2 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2015-2) | Existing validated Button; audit home-1440; user-confirmed canonical radius 4px |
+| Sport24 / Кнопка | `COMPONENT_SET` | [2015:2](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2015-2) | Локализован на месте |
+| Sport24 / Иконка / Меню | `COMPONENT` | [2021:3](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-3) | Локализован на месте |
+| Sport24 / Иконка / Закрыть | `COMPONENT` | [2021:6](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-6) | Локализован на месте |
+| Sport24 / Иконка / Матч-центр | `COMPONENT` | [2021:9](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-9) | Локализован на месте |
+| Sport24 / Метка лиги | `COMPONENT` | [2021:12](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-12) | Локализован на месте |
+| Sport24 / Текстовая ссылка / Матч-центр | `COMPONENT` | [2021:14](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-14) | Локализован на месте |
+| Sport24 / Кнопка с иконкой | `COMPONENT` | [2021:19](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-19) | Локализован на месте |
+| Sport24 / Заголовок раздела | `COMPONENT_SET` | [2024:28](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2024-28) | Локализован на месте |
+| Sport24 / Текстовая ссылка | `COMPONENT_SET` | [2046:44](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2046-44) | Создан |
+| Sport24 / Иконка / Составы | `COMPONENT` | [2047:52](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-52) | Создан |
+| Sport24 / Иконка / Статистика | `COMPONENT` | [2047:58](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-58) | Создан |
+| Sport24 / Иконка / Трансляция | `COMPONENT` | [2047:61](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-61) | Создан |
+| Sport24 / Иконка / Материалы | `COMPONENT` | [2047:64](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-64) | Создан |
+| Sport24 / Иконка / Превью матча | `COMPONENT` | [2047:67](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-67) | Создан |
+| Sport24 / Иконка / Стрелка списка | `COMPONENT` | [2047:70](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-70) | Создан |
+| Sport24 / Вкладка | `COMPONENT_SET` | [2047:90](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-90) | Создан |
+| Sport24 / Группа вкладок | `COMPONENT` | [2047:92](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-92) | Создан |
+| Sport24 / Выпадающий список / Сезон | `COMPONENT` | [2047:147](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-147) | Создан |
+| Sport24 / Метка категории | `COMPONENT` | [2047:155](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-155) | Создан |
+| Sport24 / Бейдж / Эксклюзив | `COMPONENT` | [2047:159](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-159) | Создан |
 
-## Sport24 / Icon / Menu
+## Источник новых вкладок
 
-ID: 2021:3
+Проверенный URL найден на сайте, не составлен вручную: https://sport24.ru/hockey/leagues/nhl/match/vegas-golden-nayts-utah-hockey-club-salt-lake-city-2026-11-11 . Повторная проверка выполнена 12 ноября 2026 года. Хешированные классы меняются между сборками; выше и ниже приведены исторические и текущие селекторы.
 
+## Sport24 / Кнопка
 
-## Sport24 / Icon / Close
+Узел: [2015:2](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2015-2). Объект сохранён; переведены имена и свойства.
 
-ID: 2021:6
+Источник: Главная, home-1440; пользовательское уточнение радиуса 4 пкс.
 
-
-## Sport24 / Icon / Match Center
-
-ID: 2021:9
-
-
-## Sport24 / Label / League
-
-ID: 2021:12
-
-Native properties:
+Нативные свойства:
 
 ```json
 {
-  "Label#2021:0": {
+  "Текст#2015:0": {
+    "type": "TEXT",
+    "defaultValue": "Загрузить еще"
+  },
+  "Состояние": {
+    "type": "VARIANT",
+    "defaultValue": "По умолчанию",
+    "variantOptions": [
+      "По умолчанию",
+      "При наведении"
+    ]
+  }
+}
+```
+
+- Состояние=По умолчанию: [2014:16](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2014-16); 170 × 48 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 10 / 0 / 10; интервал 0.
+  Текст «Загрузить еще»: Stag Sans LC Medium 16/19.2; стиль `S:0dc6b053b9aa097ab4c9afa7c53361f9d85c9f5f,`.
+
+- Состояние=При наведении: [2014:18](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2014-18); 170 × 48 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 10 / 0 / 10; интервал 0.
+  Текст «Загрузить еще»: Stag Sans LC Medium 16/19.2; стиль `S:0dc6b053b9aa097ab4c9afa7c53361f9d85c9f5f,`.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Иконка / Меню
+
+Узел: [2021:3](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-3). Объект сохранён; переведены имена и свойства.
+
+Источник: audit/evidence/details.json div.c6eBIW.
+
+- Sport24 / Иконка / Меню: [2021:3](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-3); 25 × 18 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Иконка / Закрыть
+
+Узел: [2021:6](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-6). Объект сохранён; переведены имена и свойства.
+
+Источник: audit/evidence/details.json div.meSwEH.
+
+- Sport24 / Иконка / Закрыть: [2021:6](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-6); 18 × 18 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Иконка / Матч-центр
+
+Узел: [2021:9](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-9). Объект сохранён; переведены имена и свойства.
+
+Источник: phase2-source.json, news-768 a.xeeGUd svg; исходное изображение 24 × 16, CSS-область 29 × 20.
+
+- Sport24 / Иконка / Матч-центр: [2021:9](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-9); 29 × 20 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Метка лиги
+
+Узел: [2021:12](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-12). Объект сохранён; переведены имена и свойства.
+
+Источник: news-768 .d42p0x; CSS .dB25r0 .d42p0x.
+
+Нативные свойства:
+
+```json
+{
+  "Текст#2021:0": {
     "type": "TEXT",
     "defaultValue": "НХЛ"
   }
 }
 ```
 
-## Sport24 / Text Link / Match Center
+- Sport24 / Метка лиги: [2021:12](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-12); 29 × 32 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 8 / 0 / 8 / 0; интервал 0.
+  Текст «НХЛ»: Stag Sans LC Medium 14/16; стиль `S:7fe3568444aa1f465dd548ad3beef7eb1060ef80,`.
 
-ID: 2021:14
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
 
-Native properties:
+## Sport24 / Текстовая ссылка / Матч-центр
+
+Узел: [2021:14](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-14). Объект сохранён; переведены имена и свойства.
+
+Источник: news-768 a.xeeGUd, phase2-source.json.
+
+Нативные свойства:
 
 ```json
 {
-  "Label#2021:1": {
+  "Текст#2021:1": {
     "type": "TEXT",
     "defaultValue": "Смотреть все матчи"
   },
-  "Icon#2021:2": {
+  "Иконка#2021:2": {
     "type": "INSTANCE_SWAP",
     "defaultValue": "2021:9",
     "preferredValues": []
@@ -65,15 +138,22 @@ Native properties:
 }
 ```
 
-## Sport24 / Icon Button
+- Sport24 / Текстовая ссылка / Матч-центр: [2021:14](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-14); 246 × 59 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 8.
+  Текст «Смотреть все матчи»: Stag Sans LC Medium 14/14; стиль `S:4cdb0d29887a3040baf34c0181b9268a20531e7f,`.
 
-ID: 2021:19
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
 
-Native properties:
+## Sport24 / Кнопка с иконкой
+
+Узел: [2021:19](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-19). Объект сохранён; переведены имена и свойства.
+
+Источник: details.json div.c6eBIW; ранее документированное применение канонического радиуса Кнопки.
+
+Нативные свойства:
 
 ```json
 {
-  "Icon#2021:3": {
+  "Иконка#2021:3": {
     "type": "INSTANCE_SWAP",
     "defaultValue": "2021:3",
     "preferredValues": []
@@ -81,68 +161,262 @@ Native properties:
 }
 ```
 
-## Sport24 / Section Heading
+- Sport24 / Кнопка с иконкой: [2021:19](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2021-19); 40 × 44 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
 
-ID: 2024:28
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
 
-Native properties:
+## Sport24 / Заголовок раздела
+
+Узел: [2024:28](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2024-28). Объект сохранён; переведены имена и свойства.
+
+Источник: match h2._7FBqFX, четыре ширины.
+
+Нативные свойства:
 
 ```json
 {
-  "Label#2024:0": {
+  "Текст#2024:0": {
     "type": "TEXT",
     "defaultValue": "Статистика"
   },
-  "Viewport": {
+  "Адаптивность": {
     "type": "VARIANT",
-    "defaultValue": "Desktop",
+    "defaultValue": "Десктопная",
     "variantOptions": [
-      "Desktop",
-      "Mobile"
+      "Десктопная",
+      "Мобильная"
     ]
   }
 }
 ```
 
-Variants:
+- Адаптивность=Десктопная: [2024:24](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2024-24); 171 × 40 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+  Текст «Статистика»: Stag Sans LC Medium 32/40; стиль `S:703f784cb27b356868b09811c538c8fa4977e14f,`.
 
-- Viewport=Desktop: [ 2024:24 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2024-24)
-- Viewport=Mobile: [ 2024:26 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2024-26)
+- Адаптивность=Мобильная: [2024:26](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2024-26); 358 × 24 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+  Текст «Статистика»: Stag Sans LC Medium 20/24; стиль `S:6c4f4197401cf6c44b09e6dd16f383f09c6ff191,`.
 
-## Sport24 / Button
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
 
-ID: 2015:2
+## Sport24 / Текстовая ссылка
 
-Native properties:
+Узел: [2046:44](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2046-44). Нативный новый объект.
+
+Источник: Главная https://sport24.ru/, a.yZz4oT и вложенный span; повторно измеренное наведение.
+
+Нативные свойства:
 
 ```json
 {
-  "Label#2015:0": {
+  "Текст#2046:2": {
     "type": "TEXT",
-    "defaultValue": "Загрузить еще"
+    "defaultValue": "Последние новости"
   },
-  "State": {
+  "Состояние": {
     "type": "VARIANT",
-    "defaultValue": "Default",
+    "defaultValue": "По умолчанию",
     "variantOptions": [
-      "Default",
-      "Hover"
+      "По умолчанию",
+      "При наведении"
     ]
   }
 }
 ```
 
-Variants:
+- Состояние=По умолчанию: [2034:44](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2034-44); 129 × 21 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+  Текст «Последние новости»: HelveticaNeueCyr Roman 14/20.02; стиль `S:db8751fcda9bf522680bd8a98b3bcf1dbd770377,`.
 
-- State=Default: [ 2014:16 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2014-16)
-- State=Hover: [ 2014:18 ](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2014-18)
+- Состояние=При наведении: [2034:46](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2034-46); 129 × 21 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+  Текст «Последние новости»: HelveticaNeueCyr Roman 14/20.02; стиль `S:45e0232490a2316f382c8042ae7d9d0ad4ee9495,`.
 
-## Implementation notes
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
 
-- Icon Menu25×18, Close18×18 and Match Center29×20 use source SVG paths as editable vector descendants; proportions are preserved within the audited CSS icon bounds. Match-center source artwork is24×16 and is scaled uniformly to29px width, vertically centered within20px control height.
-- Icon Button `2021:19` is the same node initially built as Icon Container/Header. It was renamed/reused within this build, not duplicated. `Icon` is an INSTANCE_SWAP property. Default only; radius/button4px is the documented user-rule override. Transparent; designed for the black header context.
-- Label/League is specifically the `.d42p0x` **text primitive**, not a complete logo-bearing league chip: Stag Medium14/16, vertical padding8px, natural width and height32px. Full league/logo tags remain future work.
-- Text Link/Match Center is the specialized observed `a.xeeGUd` control, not the unavailable system-font news/body-link family. Master246×59; Stag14/14 label, 29×20 nested icon, 8px gap, centered. Label and Icon properties; no unverified hidden-icon or hover/disabled variant.
-- Section Heading: Desktop32/40 applies at768/1440/1920; Mobile20/24 at390. Editable Label. No fabricated accompanying action: the audit shows a small outline Button which was not added to the validated Button family in this phase.
-- Native font shaping produces natural label widths of29px vs28.125px browser and link-label132px vs131.03125px browser; Heading natural width171px vs170.53125px. Font family, style, size and line height match. Text was not horizontally distorted to force these subpixel metrics.
-- Existing Button remains170×48, padding0/10, radius4, StagMedium16/19.2, original Label and State properties, original Default/Hover IDs and variable bindings.
+## Sport24 / Иконка / Составы
+
+Узел: [2047:52](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-52). Нативный новый объект.
+
+Источник: Исходный SVG соответствующей вкладки матча; 23 × 16 пкс.
+
+- Sport24 / Иконка / Составы: [2047:52](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-52); 23 × 16 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Иконка / Статистика
+
+Узел: [2047:58](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-58). Нативный новый объект.
+
+Источник: Исходный SVG соответствующей вкладки матча; 23 × 16 пкс.
+
+- Sport24 / Иконка / Статистика: [2047:58](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-58); 23 × 16 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Иконка / Трансляция
+
+Узел: [2047:61](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-61). Нативный новый объект.
+
+Источник: Исходный SVG соответствующей вкладки матча; 23 × 16 пкс.
+
+- Sport24 / Иконка / Трансляция: [2047:61](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-61); 23 × 16 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Иконка / Материалы
+
+Узел: [2047:64](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-64). Нативный новый объект.
+
+Источник: Исходный SVG соответствующей вкладки матча; 23 × 16 пкс.
+
+- Sport24 / Иконка / Материалы: [2047:64](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-64); 23 × 16 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Иконка / Превью матча
+
+Узел: [2047:67](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-67). Нативный новый объект.
+
+Источник: Исходные PNG двух команд в ._8CrUPD.
+
+- Sport24 / Иконка / Превью матча: [2047:67](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-67); 48 × 22 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Иконка / Стрелка списка
+
+Узел: [2047:70](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-70). Нативный новый объект.
+
+Источник: Исходный SVG CSS .S1WoTw::picker-icon.
+
+- Sport24 / Иконка / Стрелка списка: [2047:70](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-70); 16 × 16 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Вкладка
+
+Узел: [2047:90](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-90). Нативный новый объект.
+
+Источник: Матч, a._34GSq9, новая сборка A.ajArAv; активный модификатор .aA-XKU.
+
+Нативные свойства:
+
+```json
+{
+  "Текст#2047:4": {
+    "type": "TEXT",
+    "defaultValue": "Составы"
+  },
+  "Иконка#2047:5": {
+    "type": "INSTANCE_SWAP",
+    "defaultValue": "2047:52",
+    "preferredValues": []
+  },
+  "Состояние": {
+    "type": "VARIANT",
+    "defaultValue": "Неактивная",
+    "variantOptions": [
+      "Неактивная",
+      "Активная"
+    ]
+  }
+}
+```
+
+- Состояние=Неактивная: [2047:74](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-74); 160.92188 × 46 пкс; Auto Layout `VERTICAL`; отступы сверху/справа/снизу/слева 0 / 2 / 2 / 2; интервал 0.
+  Текст «Составы»: HelveticaNeueCyr Bold 13/20.8; стиль `S:6b2bf29a9dda29cdb000f82094f1ef45fbbda1b2,`.
+
+- Состояние=Активная: [2047:82](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-82); 160.92188 × 46 пкс; Auto Layout `VERTICAL`; отступы сверху/справа/снизу/слева 0 / 2 / 2 / 2; интервал 0.
+  Текст «Составы»: HelveticaNeueCyr Bold 13/20.8; стиль `S:6b2bf29a9dda29cdb000f82094f1ef45fbbda1b2,`.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Группа вкладок
+
+Узел: [2047:92](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-92). Нативный новый объект.
+
+Источник: Матч, .xhPjWL, новая сборка .Y4ruDk.
+
+- Sport24 / Группа вкладок: [2047:92](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-92); 856 × 46 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 1.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Выпадающий список / Сезон
+
+Узел: [2047:147](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-147). Нативный новый объект.
+
+Источник: Турнир https://sport24.ru/hockey/leagues/nhl, .S1WoTw.px3rmB.PM0N9q и ::picker-icon.
+
+Нативные свойства:
+
+```json
+{
+  "Текст#2047:6": {
+    "type": "TEXT",
+    "defaultValue": "2026/27"
+  }
+}
+```
+
+- Sport24 / Выпадающий список / Сезон: [2047:147](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-147); 82.84375 × 38 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 3.5 / 7 / 3.5 / 7; интервал 7.
+  Текст «2026/27»: HelveticaNeueCyr Roman 14/19.6; стиль `S:3c9e72befcf00e5c061fca71c5485755e989a29b,`.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Метка категории
+
+Узел: [2047:155](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-155). Нативный новый объект.
+
+Источник: details.json a.h21BB0; повторная проверка хоккейной метки.
+
+Нативные свойства:
+
+```json
+{
+  "Текст#2047:7": {
+    "type": "TEXT",
+    "defaultValue": "Хоккей"
+  }
+}
+```
+
+- Sport24 / Метка категории: [2047:155](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-155); 40 × 17 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 0 / 0 / 0 / 0; интервал 0.
+  Текст «Хоккей»: HelveticaNeueCyr Roman 12/16.8; стиль `S:35cbf1351cdd79c0e9bfdc144ff4671346cdc12d,`.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Sport24 / Бейдж / Эксклюзив
+
+Узел: [2047:159](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-159). Нативный новый объект.
+
+Источник: Главная, em._0jK76e.lNZqO3; новая сборка EM.rDNLAi.GqolYd и ::before.
+
+Нативные свойства:
+
+```json
+{
+  "Текст#2047:8": {
+    "type": "TEXT",
+    "defaultValue": "Эксклюзив"
+  }
+}
+```
+
+- Sport24 / Бейдж / Эксклюзив: [2047:159](https://www.figma.com/design/j3xgA2ZDMBbmbJnsGCxdhf?node-id=2047-159); 70.55 × 20.375 пкс; Auto Layout `HORIZONTAL`; отступы сверху/справа/снизу/слева 4.2 / 5.775 / 4.2 / 5.775; интервал 0.
+  Текст «Эксклюзив»: HelveticaNeueCyr Bold 10.5/17.85; стиль `S:21cda3e800eac20b8aae46a0da657cb7ee6120b6,`.
+
+Уверенность: высокая для структуры и перечисленных Figma-свойств; соответствие браузерным метрикам ограничено утверждённой сменой интерфейсного шрифта и различиями движков.
+
+## Измерения и правила использования
+
+- Кнопка: исходные варианты `2014:16` и `2014:18`, Stag Medium 16/19,2, 170 × 48, отступы 0/10, радиус 4, прежние цветовые привязки. `Текст#2015:0` и `Состояние` сохраняют исходные идентичности свойств. Исходный экземпляр `2015:3` связан с `2014:16`.
+- Иконки Меню 25 × 18, Закрыть 18 × 18, Матч-центр 29 × 20. Последняя сохраняет пропорции SVG 24 × 16 и центрирование. Белые иконки используют тёмный контекст.
+- Метка лиги — текстовый примитив Stag 14/16 с вертикальными отступами 8, а не готовая плашка с логотипом. Нативная ширина 29 против браузерной 28,125.
+- Ссылка матч-центра — специализированная роль Stag 14/14: 246 × 59, иконка 29 × 20, интервал 8. Ширина текста в Figma 132 против 131,03125 в браузере. Состояние наведения для этой роли не добавлено.
+- Заголовок раздела: 32/40 для 768/1440/1920; 20/24 для 390. Естественная ширина десктопного текста 171 против 170,53125 в браузере. Адаптивность выбирается вручную. Маленькая контурная кнопка рядом с заголовком не создавалась.
+- Общая текстовая ссылка: чёрная, без заливки и отступов, Roman 14/20,02. При наведении текст остаётся чёрным; нативное жёлтое подчёркивание #f1bd00, 3,1 пкс, смещение −0,16 пкс. Высота текстовой рамки Figma округлена до 21 при сохранённом интерлиньяже 20,02. Оба варианта HUG, текст редактируется свойством. Автоматическая реакция на наведение в прототипе не заявляется: проверено переключение варианта.
+- Вкладка: высота 46, отступы 0/2/2/2, Bold 13/20,8, иконка 23 × 16. Неактивная — белый текст, #555 с альфой 0,5; активная — #181818 на белом. Иконка заменяется INSTANCE_SWAP, подпись — TEXT. Дополнительных состояний нет.
+- Группа: пять связанных экземпляров, ширины 155,4375 / 160,921875 / 176,5 / 180,96875 / 178,171875, интервал 1, общая ширина 856, высота 46. Верхние крайние углы 4, нижние 0. Тексты и иконки редактируются у вложенных экземпляров. Для Превью — два оригинальных логотипа по 24 × 24 в области 48 × 22, воспроизводящей нижний margin −2. Это сменяемый контент конкретного матча, а не универсальные названия команд.
+- Закрытый сезон: браузерная и нативная внешняя геометрия 82,84375 × 38; Roman 14/19,6; прозрачный фон, белый текст, белая граница 20%, 1 пкс; радиус 4, отступы 3,5/7, gap 7. Подпись HUG без переноса; естественная ширина HelveticaNeueCyr 52 пкс. Внутренние метрики Figma отличаются: из-за ширины текста центрирование даёт фактический левый край 7,3046875 вместо номинального внутреннего края 8 с границей. Значения padding, gap, размера и шрифта не искажались. Индикатор 9,234375 × 19,59375; исходный SVG 16 × 16 центрирован с обрезкой, stroke 1,5, #999. Открытого меню нет.
+- Метка категории: Хоккей, #2284e6, Roman 12/16,8, без заливки/отступов. Нативная высота рамки 17. Другие категории не получают этот цвет автоматически.
+- Эксклюзив: браузерный inline-rect 69,109375 × 20,375, Bold 10,5/17,85, белый; фон #5f29cc; skew −10° (`matrix(1,0,-0.176327,1,0,0)`); верхний левый и нижний правый радиусы 3,15. Padding 4,2/5,775 сохранён, нативная высота 20,375, HUG-ширина 70,55 из-за метрик HelveticaNeueCyr. CSS margin −5,25 по вертикали и 4,2 по горизонтали относится к внешнему строковому контексту, не к padding компонента. Подложка нативная, абсолютная и растягиваемая; эффект не сплющен в картинку. Inline-геометрия браузера и блочный Auto Layout не тождественны.
+
+Не созданы непроверенные disabled, pressed, focus, дополнительные размеры, типы бейджей либо открытое меню. Полный перечень ограничений — known-limitations.md.
